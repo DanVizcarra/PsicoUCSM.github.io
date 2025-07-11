@@ -1,0 +1,105 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+#malla {
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+  overflow-x: auto;
+  padding-bottom: 20px;
+}
+
+.semestre {
+  min-width: 240px;
+  flex-shrink: 0;
+  padding: 16px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.semestre h2 {
+  font-size: 1.1em;
+  margin-bottom: 16px;
+  border-bottom: 2px solid #007acc;
+  padding-bottom: 4px;
+  color: #007acc;
+  text-align: center;
+}
+
+.curso {
+  width: 225px;
+  height: 125px;
+  padding: 10px 12px;
+  margin-bottom: 12px;
+  border-radius: 6px;
+  border-left: 5px solid #007acc;
+  background-color: #f0f8ff;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow: hidden;
+}
+
+
+.curso h3 {
+  margin: 0 0 6px 0;
+  font-size: 0.95em;
+  line-height: 1.2em;
+  word-wrap: break-word;
+}
+
+.curso p {
+  margin: 4px 0 0;
+  font-size: 0.85em;
+  word-wrap: break-word;
+}
+
+.creditos {
+  font-size: 0.8em;
+  color: #555;
+  margin-bottom: 4px;
+}
+
+#resetBtn {
+  background-color: #399e1a;
+}
+
+#resetBtn:hover {
+  background-color: #54b81b;
+}
+
+button {
+  margin-top: 6px;
+  padding: 4px 10px;
+  font-size: 0.85em;
+  background-color: #007acc;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #005f99;
+}
+
+.aprobado {
+  background-color: #d4edda;
+  border-left-color: #28a745;
+}
+
+.bloqueado {
+  background-color: #f8d7da;
+  border-left-color: #dc3545;
+}
