@@ -1,13 +1,20 @@
 body {
   font-family: Arial, sans-serif;
-  margin: 20px;
+  margin: 0;
+  padding: 20px;
   background-color: #f4f4f4;
   color: #333;
+  box-sizing: border-box;
+}
+
+* {
+  box-sizing: border-box;
 }
 
 h1 {
   text-align: center;
   margin-bottom: 40px;
+  font-size: clamp(1.5rem, 4vw, 2.5rem);
 }
 
 #malla {
@@ -37,7 +44,8 @@ h1 {
 }
 
 .curso {
-  width: 225px;
+  width: 100%;
+  max-width: 225px;
   height: 125px;
   padding: 10px 12px;
   margin-bottom: 12px;
@@ -50,7 +58,6 @@ h1 {
   justify-content: space-between;
   overflow: hidden;
 }
-
 
 .curso h3 {
   margin: 0 0 6px 0;
@@ -88,6 +95,7 @@ button {
   border: none;
   border-radius: 4px;
   cursor: pointer;
+  transition: background-color 0.2s;
 }
 
 button:hover {
@@ -102,4 +110,77 @@ button:hover {
 .bloqueado {
   background-color: #f8d7da;
   border-left-color: #dc3545;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  body {
+    padding: 10px;
+  }
+
+  h1 {
+    margin-bottom: 20px;
+  }
+
+  #malla {
+    gap: 12px;
+  }
+
+  .semestre {
+    min-width: 200px;
+    padding: 12px;
+  }
+
+  .semestre h2 {
+    font-size: 1em;
+  }
+
+  .curso {
+    max-width: 100%;
+    height: auto;
+    min-height: 110px;
+  }
+}
+
+@media (max-width: 480px) {
+  body {
+    padding: 8px;
+  }
+
+  h1 {
+    font-size: 1.3rem;
+    margin-bottom: 16px;
+  }
+
+  #malla {
+    gap: 10px;
+  }
+
+  .semestre {
+    min-width: 180px;
+    padding: 10px;
+  }
+
+  .semestre h2 {
+    font-size: 0.95em;
+    margin-bottom: 12px;
+  }
+
+  .curso {
+    padding: 8px 10px;
+    min-height: 100px;
+  }
+
+  .curso h3 {
+    font-size: 0.9em;
+  }
+
+  .curso p {
+    font-size: 0.8em;
+  }
+
+  button {
+    padding: 3px 8px;
+    font-size: 0.8em;
+  }
 }
